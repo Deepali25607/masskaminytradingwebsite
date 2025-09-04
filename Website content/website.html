@@ -229,54 +229,24 @@
             </div>
 
             <!-- Mobile Menu Button (Hamburger Icon) -->
-    <header class="p-4 bg-white shadow-md fixed top-0 left-0 w-full z-50">
-    <nav class="flex justify-between items-center">
-        <!-- Logo -->
-        <div class="text-green-700 font-bold text-lg">Maa Kaminy Trading</div>
+            <button id="mobile-menu-button"
+                class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
 
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button"
-            class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-6">
-            <a href="#home" class="text-gray-600 hover:text-green-600">Home</a>
-            <a href="Our_Product.html" class="text-gray-600 hover:text-green-600">Our Products</a>
-            <a href="#about" class="text-gray-600 hover:text-green-600">About Us</a>
-            <a href="#services" class="text-gray-600 hover:text-green-600">Services</a>
-            <a href="#benefits" class="text-gray-600 hover:text-green-600">Benefits</a>
-            <a href="#contact" class="text-gray-600 hover:text-green-600">Contact</a>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Home</a>
+            <a href="Our_Product.html" class="text-gray-600 hover:text-green-600 font-medium transition duration-300">Our Products</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">About Us</a>
+            <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Services</a>
+            <a href="#benefits" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Benefits</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Contact</a>
         </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-        class="hidden flex flex-col mt-4 space-y-2 bg-white shadow-md rounded-md p-4 md:hidden">
-        <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Home</a>
-        <a href="Our_Product.html"
-            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Our Products</a>
-        <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">About Us</a>
-        <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Services</a>
-        <a href="#benefits" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Benefits</a>
-        <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Contact</a>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuButton = document.getElementById("mobile-menu-button");
-            const mobileMenu = document.getElementById("mobile-menu");
-
-            menuButton.addEventListener("click", () => {
-                mobileMenu.classList.toggle("hidden");
-            });
-        });
-    </script>
-</header>
+    </header>
 
     <!-- Hero Section -->
     <section id="home"

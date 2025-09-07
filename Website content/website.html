@@ -205,10 +205,14 @@
     <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50">
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
             <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <img src="Logo.png" alt=""logo class="h-8 w-8 text-green-600"></img>
+        <div class="flex items-center space-x-2">
+            <img src="Logo.png" alt="logo" class="h-8 w-8 text-green-600">
+        
+            <div class="flex flex-col">
                 <span class="text-2xl font-bold text-green-700">Maa Kaminy Trading</span>
+                <span class="text-sm text-gray-600">Dhulagarh</span>
             </div>
+        </div>
 
             <!-- Navigation Links (Hidden on mobile, shown on larger screens) -->
             <div class="hidden md:flex space-x-8">
@@ -732,35 +736,24 @@
             <!-- Footer Column 3: Social Media & Legal -->
             <div>
                 <h3 class="text-lg font-semibold text-white mb-4">Follow Us</h3>
-                <div class="flex justify-center md:justify-start space-x-4 mb-6">
-                    <!-- Facebook / other icon -->
-                    <a href="https://www.facebook.com/MaKaminy?rdid=gSG6zPNHBV0LTNpI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17EebYr5Tb%2F#" target="_blank" class="text-gray-400 hover:text-white transition duration-200">
-                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z"
-                                clip-rule="evenodd" />
-                        </svg>
+                <!-- Add in <head> -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            
+                <div class="flex space-x-4">
+                    <a href="https://facebook.com/MaKaminy" target="_blank" class="text-blue-600 hover:text-blue-800">
+                        <i class="fab fa-facebook fa-lg"></i>
                     </a>
-                
-                    <!-- LinkedIn -->
-                    <a href="https://linkedin.com/in/rohit-gupta-742a9b88" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-white transition duration-200">
-                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path
-                                d="M.057 2.007l1.689 16.292 15.587 7.232L24 0 .057 2.007zm14.93 1.859L5.625 15.11 3.235 12.81l11.752-8.95z" />
-                        </svg>
+                    <a href="https://linkedin.com/in/rohit-gupta-742a9b88" target="_blank"
+                        class="text-blue-500 hover:text-blue-700">
+                        <i class="fab fa-linkedin fa-lg"></i>
                     </a>
-                
-                    <!-- YouTube -->
-                    <a href="https://www.youtube.com/@rohitgupta-fc4vb" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-white transition duration-200">
-                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path
-                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-11.531 6.55v-1.66c0-.816.146-1.218.879-1.218h.615v-2.913h-1.259c-2.026 0-3.344 1.282-3.344 3.14V9.734H6.77v3.085h1.314V20h3.101v-7.181h2.083l.298-3.085h-2.381zm5.667 0v-1.66c0-.816.146-1.218.879-1.218h.615v-2.913h-1.259c-2.026 0-3.344 1.282-3.344 3.14V9.734H12.437v3.085h1.314V20h3.101v-7.181h2.083l.298-3.085h-2.381z" />
-                        </svg>
+                    <a href="https://youtube.com/@rohitgupta-fc4vb" target="_blank" class="text-red-600 hover:text-red-800">
+                        <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </div>
-
+            
+            
+            
                 <p class="text-gray-500 text-sm">&copy; 2025 Maa Kaminy Trading. All rights reserved.</p>
                 <p class="text-gray-500 text-sm mt-1">
                     <a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms

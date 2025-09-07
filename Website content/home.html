@@ -20,10 +20,7 @@
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
             <!-- Logo -->
             <div class="flex items-center space-x-2">
-                <svg class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 4.354a4 4 0 110 5.292M12 20.354a4 4 0 110-5.292M12 14.354a4 4 0 110-5.292M12 8.354a4 4 0 110-5.292" />
-                </svg>
+                <img src="Logo.png" alt=""logo class="h-8 w-8 text-green-600"></img>
                 <span class="text-2xl font-bold text-green-700">Maa Kaminy Trading</span>
             </div>
 
@@ -59,6 +56,38 @@
            
             <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Contact</a>
         </div>
+         <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = document.querySelectorAll("#mobile-menu a");
+
+        // Toggle menu on button click
+        menuButton.addEventListener('click', (e) => {
+            e.stopPropagation(); // click bubble na ho
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Click on link → highlight + close menu
+        menuLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                // remove old active
+                menuLinks.forEach(l => l.classList.remove("bg-green-500", "text-white"));
+                // add active to clicked
+                this.classList.add("bg-green-500", "text-white");
+                // close menu
+                mobileMenu.classList.add("hidden");
+            });
+        });
+
+        // Outside click → close menu
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.classList.contains('hidden') &&
+                !mobileMenu.contains(e.target) &&
+                !menuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
     </header>
     </body>
 </html>

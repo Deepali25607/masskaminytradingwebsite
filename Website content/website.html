@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="KXgW__iMBoYxu13hE2KD8H8dRKMkWRIg8iPB7-7Ne_E" />
     <title>Maa Kaminy Trading - Revolutionizing Agri-Supply Chain</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -207,19 +208,20 @@
     <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50">
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
             <!-- Logo -->
-        <div class="flex items-center space-x-2">
-            <img src="Logo.png" alt="logo" class="h-8 w-8 text-green-600">
-        
-            <div class="flex flex-col">
-                <span class="text-2xl font-bold text-green-700">Maa Kaminy Trading</span>
-                <span class="text-sm text-gray-600">Dhulagarh Kolkata (West Bangal)</span>
+            <div class="flex items-center space-x-2">
+                <img src="Logo.png" alt="logo" class="h-8 w-8 text-green-600">
+
+                <div class="flex flex-col">
+                    <span class="text-2xl font-bold text-green-700">Maa Kaminy Trading</span>
+                    <span class="text-sm text-gray-600">Dhulagarh Kolkata (West Bangal)</span>
+                </div>
             </div>
-        </div>
 
             <!-- Navigation Links (Hidden on mobile, shown on larger screens) -->
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="text-gray-600 hover:text-green-600 font-medium transition duration-300">Home</a>
-                <a href="Our_Product.html" class="text-gray-600 hover:text-green-600 font-medium transition duration-300">Our Products</a>
+                <a href="Our_Product.html"
+                    class="text-gray-600 hover:text-green-600 font-medium transition duration-300">Our Products</a>
                 <a href="#about" class="text-gray-600 hover:text-green-600 font-medium transition duration-300">About
                     Us</a>
                 <a href="#services"
@@ -229,57 +231,58 @@
                 <a href="#contact"
                     class="text-gray-600 hover:text-green-600 font-medium transition duration-300">Contact</a>
             </div>
-        <!-- Mobile Menu Button (Hamburger Icon) -->
-        <button id="mobile-menu-button"
-            class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <button id="mobile-menu-button"
+                class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </nav>
-        
+
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
             <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Home</a>
-            <a href="Our_Product.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Our Products</a>
+            <a href="Our_Product.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Our
+                Products</a>
             <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">About Us</a>
             <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Services</a>
             <a href="#benefits" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Benefits</a>
             <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Contact</a>
         </div>
-    <script>
-        const menuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuLinks = document.querySelectorAll("#mobile-menu a");
+        <script>
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = document.querySelectorAll("#mobile-menu a");
 
-        // Toggle menu on button click
-        menuButton.addEventListener('click', (e) => {
-            e.stopPropagation(); // click bubble na ho
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Click on link → highlight + close menu
-        menuLinks.forEach(link => {
-            link.addEventListener("click", function () {
-                // remove old active
-                menuLinks.forEach(l => l.classList.remove("bg-green-500", "text-white"));
-                // add active to clicked
-                this.classList.add("bg-green-500", "text-white");
-                // close menu
-                mobileMenu.classList.add("hidden");
+            // Toggle menu on button click
+            menuButton.addEventListener('click', (e) => {
+                e.stopPropagation(); // click bubble na ho
+                mobileMenu.classList.toggle('hidden');
             });
-        });
 
-        // Outside click → close menu
-        document.addEventListener('click', (e) => {
-            if (!mobileMenu.classList.contains('hidden') &&
-                !mobileMenu.contains(e.target) &&
-                !menuButton.contains(e.target)) {
-                mobileMenu.classList.add('hidden');
-            }
-        });
-    </script>
-        </header>
+            // Click on link → highlight + close menu
+            menuLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    // remove old active
+                    menuLinks.forEach(l => l.classList.remove("bg-green-500", "text-white"));
+                    // add active to clicked
+                    this.classList.add("bg-green-500", "text-white");
+                    // close menu
+                    mobileMenu.classList.add("hidden");
+                });
+            });
+
+            // Outside click → close menu
+            document.addEventListener('click', (e) => {
+                if (!mobileMenu.classList.contains('hidden') &&
+                    !mobileMenu.contains(e.target) &&
+                    !menuButton.contains(e.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        </script>
+    </header>
 
     <!-- Hero Section -->
     <section id="home"
@@ -351,7 +354,7 @@
             </div>
         </div>
     </section>
-   
+
     <!-- About Us Section -->
     <section id="about" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
@@ -359,7 +362,8 @@
                 About Maa Kaminy Trading
             </h2>
             <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-12">
-                Maa Kaminy Trading is a pioneering B2B platform revolutionizing the agricultural supply chain. We connect
+                Maa Kaminy Trading is a pioneering B2B platform revolutionizing the agricultural supply chain. We
+                connect
                 farmers directly with retailers, restaurants, and institutions, eliminating middlemen and ensuring fresh
                 produce reaches consumers faster and more efficiently.
             </p>
@@ -586,7 +590,8 @@
                 Ready to Transform Your Agri-Supply?
             </h2>
             <p class="text-lg md:text-xl opacity-90 mb-10">
-                Join Maa Kaminy Trading today and experience a smarter, fresher, and more profitable way to source and supply
+                Join Maa Kaminy Trading today and experience a smarter, fresher, and more profitable way to source and
+                supply
                 agricultural produce.
             </p>
             <a href="#contact"
@@ -596,7 +601,7 @@
         </div>
     </section>
 
-   
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 md:py-24 bg-gray-100">
@@ -722,7 +727,8 @@
                 <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
                 <ul class="space-y-2">
                     <li><a href="#home" class="text-gray-400 hover:text-white transition duration-200">Home</a></li>
-                    <a href="Our_Product.html" class="text-gray-600 hover:text-green-600 font-medium transition duration-300">Our Products</a>
+                    <a href="Our_Product.html"
+                        class="text-gray-600 hover:text-green-600 font-medium transition duration-300">Our Products</a>
                     <li><a href="#about" class="text-gray-400 hover:text-white transition duration-200">About Us</a>
                     </li>
                     <li><a href="#services" class="text-gray-400 hover:text-white transition duration-200">Services</a>
@@ -740,7 +746,7 @@
                 <h3 class="text-lg font-semibold text-white mb-4">Follow Us</h3>
                 <!-- Add in <head> -->
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-            
+
                 <div class="flex space-x-4">
                     <a href="https://facebook.com/MaKaminy" target="_blank" class="text-blue-600 hover:text-blue-800">
                         <i class="fab fa-facebook fa-lg"></i>
@@ -749,13 +755,14 @@
                         class="text-blue-500 hover:text-blue-700">
                         <i class="fab fa-linkedin fa-lg"></i>
                     </a>
-                    <a href="https://youtube.com/@rohitgupta-fc4vb" target="_blank" class="text-red-600 hover:text-red-800">
+                    <a href="https://youtube.com/@rohitgupta-fc4vb" target="_blank"
+                        class="text-red-600 hover:text-red-800">
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </div>
-            
-            
-            
+
+
+
                 <p class="text-gray-500 text-sm">&copy; 2025 Maa Kaminy Trading. All rights reserved.</p>
                 <p class="text-gray-500 text-sm mt-1">
                     <a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms
@@ -837,86 +844,86 @@
 
         toggleBtn.addEventListener('click', () => {
             chatWindow.style.display = 'flex';
-            toggleBtn.style.display = 'none'; 
+            toggleBtn.style.display = 'none';
         });
 
         closeBtn.addEventListener('click', () => {
             chatWindow.style.display = 'none';
-            toggleBtn.style.display = 'inline-flex'; 
+            toggleBtn.style.display = 'inline-flex';
         });
     </script>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const chatbotToggleButton = document.getElementById('chatbot-toggle-button');
-        const chatbotWindow = document.getElementById('chatbot-window');
-        const closeChatbotButton = document.getElementById('close-chatbot-button');
-        const chatMessagesContainer = document.getElementById('chat-messages');
-        const chatInput = document.getElementById('chat-input');
-        const sendChatButton = document.getElementById('send-chat-button');
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatbotToggleButton = document.getElementById('chatbot-toggle-button');
+            const chatbotWindow = document.getElementById('chatbot-window');
+            const closeChatbotButton = document.getElementById('close-chatbot-button');
+            const chatMessagesContainer = document.getElementById('chat-messages');
+            const chatInput = document.getElementById('chat-input');
+            const sendChatButton = document.getElementById('send-chat-button');
 
-        const phoneNumber = "+917890809303";
+            const phoneNumber = "+917890809303";
 
-        // Function to add a message bubble
-        function addMessage(sender, message, isLink = false) {
-            const messageDiv = document.createElement('div');
-            messageDiv.classList.add('chat-message', sender);
+            // Function to add a message bubble
+            function addMessage(sender, message, isLink = false) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('chat-message', sender);
 
-            const bubbleDiv = document.createElement('div');
-            bubbleDiv.classList.add('chat-bubble');
+                const bubbleDiv = document.createElement('div');
+                bubbleDiv.classList.add('chat-bubble');
 
-            if (isLink) {
-                const link = document.createElement('a');
-                link.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                link.target = "_blank";
-                link.textContent = "Open in WhatsApp";
-                link.classList.add("text-green-600", "underline", "font-semibold");
-                bubbleDiv.appendChild(link);
-            } else {
-                bubbleDiv.textContent = message;
+                if (isLink) {
+                    const link = document.createElement('a');
+                    link.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    link.target = "_blank";
+                    link.textContent = "Open in WhatsApp";
+                    link.classList.add("text-green-600", "underline", "font-semibold");
+                    bubbleDiv.appendChild(link);
+                } else {
+                    bubbleDiv.textContent = message;
+                }
+
+                messageDiv.appendChild(bubbleDiv);
+                chatMessagesContainer.appendChild(messageDiv);
+                chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
             }
 
-            messageDiv.appendChild(bubbleDiv);
-            chatMessagesContainer.appendChild(messageDiv);
-            chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
-        }
+            // Toggle chatbot window
+            chatbotToggleButton.addEventListener('click', () => {
+                chatbotWindow.classList.toggle('hidden');
+                chatbotWindow.classList.toggle('open');
+                if (!chatbotWindow.classList.contains('hidden')) {
+                    chatInput.focus();
+                }
+            });
 
-        // Toggle chatbot window
-        chatbotToggleButton.addEventListener('click', () => {
-            chatbotWindow.classList.toggle('hidden');
-            chatbotWindow.classList.toggle('open');
-            if (!chatbotWindow.classList.contains('hidden')) {
-                chatInput.focus();
+            closeChatbotButton.addEventListener('click', () => {
+                chatbotWindow.classList.add('hidden');
+                chatbotWindow.classList.remove('open');
+            });
+
+            // Send message function
+            function sendMessage() {
+                const userMessage = chatInput.value.trim();
+                if (userMessage === '') return;
+
+                // Show user message in chat
+                addMessage('user', userMessage);
+
+                // Show WhatsApp link in chat
+                addMessage('ai', userMessage, true);
+
+                chatInput.value = ''; // clear input
             }
+
+            sendChatButton.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
         });
-
-        closeChatbotButton.addEventListener('click', () => {
-            chatbotWindow.classList.add('hidden');
-            chatbotWindow.classList.remove('open');
-        });
-
-        // Send message function
-        function sendMessage() {
-            const userMessage = chatInput.value.trim();
-            if (userMessage === '') return;
-
-            // Show user message in chat
-            addMessage('user', userMessage);
-
-            // Show WhatsApp link in chat
-            addMessage('ai', userMessage, true);
-
-            chatInput.value = ''; // clear input
-        }
-
-        sendChatButton.addEventListener('click', sendMessage);
-        chatInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
-    });
-</script>
+    </script>
 </body>
 
 </html>
